@@ -26,7 +26,7 @@ A modern, interactive personal portfolio website built with HTML and CSS, featur
    git clone https://github.com/codeByKaustubh/Portfolio
    ```
 
-2. Open `index.html` in your web browser to view the website.
+2. Open `https://tinyurl.com/3j3hu6uy` in your web browser to view the website.
 
 ## 📂 Project Structure
 
@@ -61,10 +61,6 @@ The website is fully responsive and optimized for:
 - Desktop screens
 - Tablets
 - Mobile devices
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ## 🤝 Contact
 
