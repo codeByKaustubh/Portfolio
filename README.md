@@ -14,8 +14,8 @@ A modern, interactive personal portfolio website built with HTML and CSS, featur
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - Font Awesome Icons (v6.5.1)
 - Google Fonts
 
@@ -23,7 +23,7 @@ A modern, interactive personal portfolio website built with HTML and CSS, featur
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/Portfolio.git
+   git clone https://github.com/codeByKaustubh/Portfolio
    ```
 
 2. Open `index.html` in your web browser to view the website.
