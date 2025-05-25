@@ -55,7 +55,7 @@
             <section class="contact">
                 <h2>Contact Me</h2>
                 <div class="contact-container">
-                    <form id="contact-form" method="POST">
+                    <form action="stock/done.html" method="POST" id="contact-form">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
@@ -75,5 +75,13 @@
             <p>Yeeee Haaawwwwwwww!!</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            // For now, we'll just redirect to the done page
+            window.location.href = 'stock/done.html';
+        });
+    </script>
 </body>
 </html> 
