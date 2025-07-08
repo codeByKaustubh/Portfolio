@@ -13,6 +13,7 @@ https://tinyurl.com/3j3hu6uy
 - Projects showcase section
 - Smooth animations and transitions
 - Clean and minimalist UI
+- New
 
 ## 🛠️ Technologies Used
 
