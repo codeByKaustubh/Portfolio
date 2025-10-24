@@ -1,121 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="stock/logo.jpeg">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio — Your Name</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills and contact information." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="stock/logo.jpeg">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="name">Kaustubh Rane</h1>
-            <h2 class="title">Expert</h2>
-            
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/kaustubh-rane-7262032b2/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/codeByKaustubh" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/krane.__/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
-                <a href="https://open.spotify.com/user/i17e6e77jw91c259aawau5lqx?si=ab5533245e114505" target="_blank" class="social-btn"><i class="fab fa-spotify"></i></a>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div>
+          <h1>Kaustubh Anant Rane</h1>
+          <div class="small muted">Frontend developer</div>
+        </div>
+      </div>
+      <div class="controls">
+        <nav>
+        </nav>
+        <button id="themeToggle" class="btn" aria-label="Toggle theme">Toggle</button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <section class="hero" aria-labelledby="intro-title">
+          <div class="meta">
+            <div class="avatar" aria-hidden="true"><img src="/stock/profile.jpg" alt="Profile photo"></div>
+            <div>
+              <h2 id="intro-title">Hi — I'm Kaustubh Anant Rane</h2>
+              <p class="lead">I build accessible, fast, and delightful web interfaces. I focus on performance, clean code.</p>
+              <div class="cta">
+                <a class="btn" href="#projects">See projects</a>
+                <button class="btn" id="copyEmail">Copy email</button>
+              </div>
             </div>
-        </header>
+          </div>
 
-        <main>
-            <div class="profile-section">
-                <div class="profile-text">
-                    <p class="tagline">Eager to learn and explore new things.</p>
-                    <a href="https://tinyurl.com/4bby3fpd" target="_blank" class="resume-btn">Resume</a>
-                </div>
-                <div class="profile-image">
-                    <div class="image-frame">
-                        <img src="/stock/profile.jpg" alt="Profile Image">
-                    </div>
-                </div>
+          <div class="projects" id="projects">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+              <h3 style="margin:0">Projects</h3>
             </div>
 
-            <section class="skills">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <div class="skill-items">
-                            <span class="skill-item"><i class="fab fa-html5"></i> HTML5</span>
-                            <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</span>
-                            <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="skill-item"><i class="fab fa-python"></i> Python</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Technologies</h3>
-                        <div class="skill-items">
-                            <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
-                            <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
-                            <span class="skill-item"><i class="fas fa-database"></i> SQL</span>
-                            <span class="skill-item"><i class="fas fa-code"></i> VS Code</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-items">
-                            <span class="skill-item"><i class="fas fa-users"></i> Team Work</span>
-                            <span class="skill-item"><i class="fas fa-tasks"></i> Problem Solving</span>
-                            <span class="skill-item"><i class="fas fa-comments"></i> Communication</span>
-                            <span class="skill-item"><i class="fas fa-lightbulb"></i> Creativity</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="projects-grid" id="projectsGrid"></div>
+          </div>
+        </section>
 
-            <section class="projects">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Project 1</h3>
-                        <p><a href="https://dabbewale.netlify.app/" target="_blank">DabbeWale</a></p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 2</h3>
-                        <p><a href="https://crazytype.netlify.app/" target="_blank">CrazyType</a></p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 3</h3>
-                        <p>---------</p>
-                    </div>
-                </div>
-            </section>
+        <section id="about" class="card" style="margin-top:18px">
+          <h3>About me</h3>
+          <p class="muted">I’m a frontend developer with less than a year of experience building modern websites and web apps. I love design systems, animation, and performance tuning.</p>
+          <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+            <a class="tag" href="#">Download CV</a>
+            <a class="tag" href="https://github.com/codeByKaustubh" target="_blank">Github</a>
+            <a class="tag" href="https://www.linkedin.com/in/kaustubh-rane-7262032b2/?originalSubdomain=in" target="_blank">LinkedIn</a>
+          </div>
+        </section>
 
-            <section class="contact">
-                <h2>Contact Me</h2>
-                <div class="contact-container">
-                    <form action="stock/done.html" method="POST" id="contact-form">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </section>
-        </main>
+      </section>
 
-        <footer>
-            <p>Yeeee Haaawwwwwwww!!</p>
-        </footer>
+      <aside>
+        <div class="panel">
+          <h4 style="margin:0 0 8px">Skills</h4>
+          <div class="skills" id="skillsList">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Accessibility</div>
+            <div class="skill">Performance</div>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true">
+      <div class="inner" id="modalInner">
+        <div id="modalContent"></div>
+      </div>
     </div>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Here you would typically send the form data to a server
-            // For now, we'll just redirect to the done page
-            window.location.href = 'stock/done.html';
-        });
-    </script>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
