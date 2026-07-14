@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio of Kaustubh Rane — web developer and machine learning enthusiast." />
     <title>Kaustubh Rane — Web Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/portfolio.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <style>@keyframes scroll{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}</style>
+    <link rel="stylesheet" href="logo.css" />
+    <style>
+      @keyframes scroll{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
+      .project-image{perspective:900px;transform-style:preserve-3d;will-change:transform;transition:transform .22s ease,box-shadow .22s ease}.project-image img{will-change:transform}.project-image:hover{box-shadow:15px 20px 0 rgba(20,39,37,.13)}
+      .cube-scene{position:absolute;right:8%;bottom:-70px;width:175px;height:175px;perspective:900px;pointer-events:none}.cube{width:100%;height:100%;position:relative;transform-style:preserve-3d;animation:cube-spin 15s linear infinite}.cube-face{position:absolute;inset:0;border:1px solid rgba(217,241,84,.72);background:rgba(217,241,84,.07)}.cube-face:nth-child(1){transform:translateZ(87px)}.cube-face:nth-child(2){transform:rotateY(180deg) translateZ(87px)}.cube-face:nth-child(3){transform:rotateY(90deg) translateZ(87px)}.cube-face:nth-child(4){transform:rotateY(-90deg) translateZ(87px)}.cube-face:nth-child(5){transform:rotateX(90deg) translateZ(87px)}.cube-face:nth-child(6){transform:rotateX(-90deg) translateZ(87px)}@keyframes cube-spin{from{transform:rotateX(-18deg) rotateY(0)}to{transform:rotateX(342deg) rotateY(360deg)}}.about{position:relative;overflow:hidden}@media(max-width:700px){.cube-scene{display:none}}
+    </style>
   </head>
   <body>
     <div class="grain"></div>
     <header class="nav container">
-      <a class="monogram" href="#top" aria-label="Kaustubh Rane home">KR<span>.</span></a>
+      
       <nav aria-label="Main navigation">
         <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
@@ -27,7 +33,7 @@
           <p class="eyebrow"><i></i> Available for opportunities</p>
           <h1>Building useful<br /><em>digital</em> experiences.</h1>
           <p class="intro">I'm Kaustubh Rane, a Computer Science student and web developer who enjoys turning practical ideas into thoughtful, human-centred products.</p>
-          <div class="hero-actions"><a class="button" href="#work">Explore selected work <span>↓</span></a><a class="text-link" href="mailto:kaustubhrane1012@gmail.com">Get in touch <span>↗</span></a></div>
+          <div class="hero-actions"><a class="button" href="#work">Explore selected work <span>↓</span></a><a class="text-link" href="https://www.linkedin.com/in/kaustubh-rane-7262032b2" target="_blank" rel="noreferrer">Get in touch <span>↗</span></a></div>
         </div>
         <div class="orbital-wrap" aria-label="Interactive 3D decorative form">
           <canvas id="orbital" width="640" height="640"></canvas>
@@ -50,7 +56,7 @@
         </div>
       </section>
 
-      <section class="about" id="about"><div class="container about-grid"><p class="eyebrow">02 / About me</p><div><h2>Curious by nature.<br /><em>Intentional</em> by practice.</h2><p class="about-copy">Currently completing a BSc in Computer Science at R. D. &amp; S. H. National College, Mumbai. I combine a foundation in software engineering with an eye for clear interfaces—whether I’m building a web product or making ML predictions easier to understand.</p><div class="stats"><div><strong>7.83</strong><span>Current CGPA / 10</span></div><div><strong>06</strong><span>Projects built</span></div><div><strong>2026</strong><span>Expected graduation</span></div></div></div></div></section>
+      <section class="about" id="about"><div class="cube-scene" aria-hidden="true"><div class="cube"><i class="cube-face"></i><i class="cube-face"></i><i class="cube-face"></i><i class="cube-face"></i><i class="cube-face"></i><i class="cube-face"></i></div></div><div class="container about-grid"><p class="eyebrow">02 / About me</p><div><h2>Curious by nature.<br /><em>Intentional</em> by practice.</h2><p class="about-copy">Currently completing a BSc in Computer Science at R. D. &amp; S. H. National College, Mumbai. I combine a foundation in software engineering with an eye for clear interfaces—whether I’m building a web product or making ML predictions easier to understand.</p><div class="stats"><div><strong>7.83</strong><span>Current CGPA / 10</span></div><div><strong>06</strong><span>Projects built</span></div><div><strong>2026</strong><span>Expected graduation</span></div></div></div></div></section>
 
       <section class="section container expertise"><div class="section-heading"><p class="eyebrow">03 / Capabilities</p><h2>A practical<br /><em>toolkit.</em></h2></div><div class="skill-list"><div><span>01</span><h3>Frontend development</h3><p>HTML5 · CSS3 · JavaScript · Bootstrap</p></div><div><span>02</span><h3>Applied machine learning</h3><p>Python · Streamlit · SHAP · LIME</p></div><div><span>03</span><h3>Product &amp; developer tools</h3><p>Node.js · MongoDB · Git · Figma</p></div></div></section>
 
@@ -58,5 +64,6 @@
     </main>
     <footer class="container"><span>© 2026 Kaustubh Rane</span><span>Designed &amp; built with intention</span></footer>
     <script src="script.js"></script>
+    <script src="effects.js"></script>
   </body>
 </html>

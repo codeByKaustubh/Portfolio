@@ -1,0 +1,12 @@
+.monogram {
+  display: flex;
+  align-items: center;
+  width: 42px;
+  text-decoration: none;
+}
+
+.monogram img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
