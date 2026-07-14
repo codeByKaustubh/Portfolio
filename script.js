@@ -1,1 +1,10 @@
-console.log("Portfolio Loaded Successfully!");
+const canvas = document.querySelector('#orbital');
+const ctx = canvas.getContext('2d');
+let angle = -.45, tilt = .45, targetAngle = angle, dragging = false, lastX = 0;
+
+function fitCanvas() { const d = Math.min(devicePixelRatio || 1, 2); canvas.width = canvas.clientWidth * d; canvas.height = canvas.clientHeight * d; ctx.setTransform(d,0,0,d,0,0); }
+function point(x,y,z) { const c=Math.cos(angle),s=Math.sin(angle),ct=Math.cos(tilt),st=Math.sin(tilt),unit=Math.min(canvas.clientWidth,canvas.clientHeight)*.29; const rx=x*c-z*s, rz=x*s+z*c, ry=y*ct-rz*st; return [canvas.clientWidth/2+rx*unit,canvas.clientHeight/2+ry*unit,rz*ct+y*st]; }
+function line(a,b,color,width=1) { const p=point(...a),q=point(...b); ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke(); }
+function ring(r, axis, color) { const pts=[]; for(let i=0;i<=80;i++){const t=i/80*Math.PI*2;pts.push(axis===0?[0,Math.cos(t)*r,Math.sin(t)*r]:axis===1?[Math.cos(t)*r,0,Math.sin(t)*r]:[Math.cos(t)*r,Math.sin(t)*r,0]);} for(let i=1;i<pts.length;i++)line(pts[i-1],pts[i],color); }
+function draw(){ const w=canvas.clientWidth,h=canvas.clientHeight;ctx.clearRect(0,0,w,h);const scale=Math.min(w,h)*.29;ring(1.38,1,'rgba(20,39,37,.19)');ring(1.05,2,'rgba(20,39,37,.14)');ring(.75,0,'rgba(20,39,37,.12)');for(let i=0;i<12;i++){const t=i/12*Math.PI*2;line([Math.cos(t)*.25,-.62,Math.sin(t)*.25],[Math.cos(t)*.72,.62,Math.sin(t)*.72],'rgba(20,39,37,.22)');}const p=point(0,0,0);const gradient=ctx.createRadialGradient(p[0]-.18*scale,p[1]-.2*scale,0,p[0],p[1],.63*scale);gradient.addColorStop(0,'#eaff88');gradient.addColorStop(1,'#b6d332');ctx.beginPath();ctx.arc(p[0],p[1],.63*scale,0,Math.PI*2);ctx.fillStyle=gradient;ctx.fill();angle+=(targetAngle-angle)*.06;targetAngle+=.0015;requestAnimationFrame(draw)}
+window.addEventListener('resize',fitCanvas);canvas.addEventListener('pointerdown',e=>{dragging=true;lastX=e.clientX;canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!dragging)return;targetAngle+=(e.clientX-lastX)*.012;lastX=e.clientX});canvas.addEventListener('pointerup',()=>dragging=false);fitCanvas();draw();

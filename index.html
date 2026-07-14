@@ -1,176 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Kaustubh Rane | Portfolio</title>
-    <meta name="description" content="Portfolio of Kaustubh Anant Rane - BSc Computer Science student building Python, JavaScript, web, ML and data tools.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <h1>Kaustubh Anant Rane</h1>
-
-            <p>Computer Science Student | Python &amp; JavaScript Developer | Web, ML &amp; Data Tools</p>
-
-            <p>Computer Science Student | Web Development | Full Stack Enthusiast</p>
-
-            <div class="links" aria-label="Contact and social links">
-                <a href="mailto:kaustubhrane1012@gmail.com" aria-label="Send email to Kaustubh">Email</a>
-                <a href="https://www.linkedin.com/in/kaustubh-rane-7262032b2/" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://github.com/codeByKaustubh" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Kaustubh Rane — web developer and machine learning enthusiast." />
+    <title>Kaustubh Rane — Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>@keyframes scroll{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}</style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="nav container">
+      <a class="monogram" href="#top" aria-label="Kaustubh Rane home">KR<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="mailto:kaustubhrane1012@gmail.com">Let's talk <span>↗</span></a>
     </header>
 
-    <main id="main">
-        <div class="container">
-            <section class="about" aria-labelledby="about-heading">
-                <h2 id="about-heading">About Me</h2>
-                <p>
-                    I am a BSc Computer Science student at R.D. &amp; S.H. National College with a
-                    7.83/10 CGPA. I build practical web, Python and machine-learning projects,
-                    from privacy-first data utilities to Progressive Web Apps and interpretable
-                    health-tech prototypes.
-                </p>
-            </section>
-
-            <section class="skills" aria-labelledby="skills-heading">
-                <h2 id="skills-heading">Technical Skills</h2>
-                <ul>
-                    <li><strong>Languages:</strong> Python, HTML5, CSS3, JavaScript (Intermediate)</li>
-                    <li><strong>Frameworks &amp; Libraries:</strong> Bootstrap, Node.js, Streamlit, SHAP, LIME</li>
-                    <li><strong>Databases:</strong> MongoDB</li>
-                    <li><strong>Developer Tools:</strong> Git, GitHub, VS Code, Figma, WordPress</li>
-                    <li><strong>Design &amp; Media:</strong> Canva, DaVinci Resolve, MS Office Suite</li>
-
-                    <li>Languages: Python, HTML, CSS, JavaScript</li>
-                    <li>Frontend: Bootstrap</li>
-                    <li>Backend: NodeJS, MongoDB</li>
-                    <li>Tools: Git, GitHub, VS Code, Figma, Wordpress</li>
-                </ul>
-            </section>
-
-            <section class="projects" aria-labelledby="projects-heading">
-                <h2 id="projects-heading">Projects</h2>
-
-                <div class="project-grid" role="list">
-                    <article class="project-card" role="listitem">
-                        <p class="project-meta">Jul &ndash; Sep 2025</p>
-                        <h3 class="project-title">DabbeWale</h3>
-                        <p class="project-description">
-                            Full-stack web platform connecting urban users with local home-cooked meal
-                            providers, focused on accessibility, community support and affordable nutrition.
-                        </p>
-                        <div class="project-actions">
-                            <a class="btn" href="https://dabbewale.netlify.app/" target="_blank" rel="noopener" aria-label="Open DabbeWale project">View</a>
-                            <a class="btn secondary" href="dabbewale.html" aria-label="View details for DabbeWale">Details</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <p class="project-meta">Dec 2025 &ndash; Mar 2026</p>
-                        <h3 class="project-title">HealBuddy - Rule-Based Engine</h3>
-                        <p class="project-description">
-                            Browser-based symptom checker using deterministic rule logic to map symptom
-                            patterns to common health conditions for general awareness.
-                        </p>
-                        <div class="project-actions">
-                            <a class="btn" href="https://healbuddyy.netlify.app/" target="_blank" rel="noopener" aria-label="Open HealBuddy rule-based project">View</a>
-                            <a class="btn secondary" href="healbuddy.html" aria-label="View details for HealBuddy">Details</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <p class="project-meta">Jan &ndash; Mar 2026</p>
-                        <h3 class="project-title">HealBuddy - ML Edition</h3>
-                        <p class="project-description">
-                            Multipage Streamlit app with decision tree, random forest and SVM models,
-                            plus SHAP and LIME integration for local, interpretable predictions.
-                        </p>
-                        <div class="project-actions">
-                            <a class="btn secondary" href="healbuddy-ml.html" aria-label="View details for HealBuddy ML Edition">Details</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <p class="project-meta">Nov 2025 &ndash; Jan 2026</p>
-                        <h3 class="project-title">SipSentry</h3>
-                        <p class="project-description">
-                            Progressive Web App delivering customizable hydration reminders through
-                            browser notifications. Installable, offline-capable and lightweight.
-                        </p>
-                        <div class="project-actions">
-                            <a class="btn" href="https://sipsentry.netlify.app/" target="_blank" rel="noopener" aria-label="Open SipSentry project">View</a>
-                            <a class="btn secondary" href="sipsentry.html" aria-label="View details for SipSentry">Details</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <p class="project-meta">Mar 2026</p>
-                        <h3 class="project-title">FollowTrack</h3>
-                        <p class="project-description">
-                            Client-side Instagram follower analysis tool that parses user-exported JSON
-                            locally to identify non-followers without server calls or third-party APIs.
-                        </p>
-                        <div class="project-actions">
-                            <a class="btn" href="https://followtrack.streamlit.app/" target="_blank" rel="noopener" aria-label="Open FollowTrack project">View</a>
-                            <a class="btn secondary" href="followtrack.html" aria-label="View details for FollowTrack">Details</a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="education" aria-labelledby="education-heading">
-                <h2 id="education-heading">Education</h2>
-                <ul>
-                    <li>
-                        <strong>Bachelor of Science (BSc) - Computer Science</strong><br>
-                        R.D. &amp; S.H. National College, Bandra West (2023 &ndash; 2026)<br>
-                        CGPA: 7.83/10
-                    </li>
-                    <li>
-                        <strong>Higher Secondary Certificate (HSC) - Science Stream</strong><br>
-                        Viva College, Virar West (2021 &ndash; 2023) - 62.67%
-                    </li>
-                    <li>
-                        <strong>Secondary School Certificate (SSC)</strong><br>
-                        Utkarsha Vidyalaya, Virar West (2019 &ndash; 2021) - 86.83%
-                    </li>
-                </ul>
-            </section>
-
-            <section class="coursework" aria-labelledby="coursework-heading">
-                <h2 id="coursework-heading">Relevant Coursework</h2>
-                <p>
-                    Data Structures &amp; Algorithms, OOP, DBMS, Operating Systems, Computer Networks,
-                    Software Engineering, AI, Machine Learning, Web Technologies, Data Visualization
-                    &amp; Analytics, Cloud Computing, Cybersecurity and UI/UX Fundamentals.
-                    
-                    BSc Computer Science (2023–2026)<br>
-                    R.D. &amp; S.H. National College<br>
-                    CGPA: 8.40
-                </p>
-            </section>
-
-            <section class="certifications" aria-labelledby="certifications-heading">
-                <h2 id="certifications-heading">Certifications &amp; Online Courses</h2>
-                <ul>
-                    <li>Scientific Computing with Python - freeCodeCamp (In Progress)</li>
-                    <li>Introduction to PowerShell - Centri (In Progress)</li>
-                    <li>Introduction to Cybersecurity - Cisco Networking Academy (In Progress)</li>
-                </ul>
-            </section>
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> Available for opportunities</p>
+          <h1>Building useful<br /><em>digital</em> experiences.</h1>
+          <p class="intro">I'm Kaustubh Rane, a Computer Science student and web developer who enjoys turning practical ideas into thoughtful, human-centred products.</p>
+          <div class="hero-actions"><a class="button" href="#work">Explore selected work <span>↓</span></a><a class="text-link" href="mailto:kaustubhrane1012@gmail.com">Get in touch <span>↗</span></a></div>
         </div>
+        <div class="orbital-wrap" aria-label="Interactive 3D decorative form">
+          <canvas id="orbital" width="640" height="640"></canvas>
+          <div class="orbital-label label-one">WEB / ML</div><div class="orbital-label label-two">EST. 2023</div>
+          <p class="drag-hint">drag to orbit</p>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Skills"><div>WEB DEVELOPMENT <b>✳</b> MACHINE LEARNING <b>✳</b> INTERACTIVE EXPERIENCES <b>✳</b> WEB DEVELOPMENT <b>✳</b> MACHINE LEARNING <b>✳</b></div></section>
+
+      <section class="section container work" id="work">
+        <div class="section-heading"><p class="eyebrow">01 / Selected work</p><h2>Making technology<br />feel <em>more useful.</em></h2><p>Projects grounded in everyday needs—from community food access to accessible health and safety tools.</p></div>
+        <div class="project-grid">
+          <article class="project project-featured"><a href="#contact" class="project-image"><img src="ss/dabbewale.png" alt="DabbeWale web platform homepage" /><span class="project-arrow">↗</span></a><div class="project-meta"><div><p>01 / 2025</p><h3>DabbeWale</h3></div><span>Full-stack platform</span></div></article>
+          <article class="project"><a href="#contact" class="project-image project-image-mint"><img src="ss/healbuddyRB.png" alt="HealBuddy rule-based symptom checker" /><span class="project-arrow">↗</span></a><div class="project-meta"><div><p>02 / 2026</p><h3>HealBuddy</h3></div><span>Rule-based engine</span></div></article>
+          <article class="project"><a href="#contact" class="project-image project-image-blue"><img src="ss/healbuddyML.png" alt="HealBuddy machine learning symptom checker" /><span class="project-arrow">↗</span></a><div class="project-meta"><div><p>03 / 2026</p><h3>HealBuddy ML</h3></div><span>Explainable ML app</span></div></article>
+          <article class="project"><a href="#contact" class="project-image project-image-water"><img src="ss/sipsentry.png" alt="SipSentry hydration reminder application" /><span class="project-arrow">↗</span></a><div class="project-meta"><div><p>04 / 2026</p><h3>SipSentry</h3></div><span>Progressive web app</span></div></article>
+          <article class="project"><a href="#contact" class="project-image project-image-lilac"><img src="ss/folloetrack.png" alt="FollowTrack Instagram follower analysis tool" /><span class="project-arrow">↗</span></a><div class="project-meta"><div><p>05 / 2026</p><h3>FollowTrack</h3></div><span>Private data utility</span></div></article>
+          <article class="project"><a href="#contact" class="project-image project-image-dark"><img src="ss/protekt.png" alt="Protekt emergency safety application" /><span class="project-arrow">↗</span></a><div class="project-meta"><div><p>07 / 2026</p><h3>Protekt</h3></div><span>Emergency safety system</span></div></article>
+        </div>
+      </section>
+
+      <section class="about" id="about"><div class="container about-grid"><p class="eyebrow">02 / About me</p><div><h2>Curious by nature.<br /><em>Intentional</em> by practice.</h2><p class="about-copy">Currently completing a BSc in Computer Science at R. D. &amp; S. H. National College, Mumbai. I combine a foundation in software engineering with an eye for clear interfaces—whether I’m building a web product or making ML predictions easier to understand.</p><div class="stats"><div><strong>7.83</strong><span>Current CGPA / 10</span></div><div><strong>06</strong><span>Projects built</span></div><div><strong>2026</strong><span>Expected graduation</span></div></div></div></div></section>
+
+      <section class="section container expertise"><div class="section-heading"><p class="eyebrow">03 / Capabilities</p><h2>A practical<br /><em>toolkit.</em></h2></div><div class="skill-list"><div><span>01</span><h3>Frontend development</h3><p>HTML5 · CSS3 · JavaScript · Bootstrap</p></div><div><span>02</span><h3>Applied machine learning</h3><p>Python · Streamlit · SHAP · LIME</p></div><div><span>03</span><h3>Product &amp; developer tools</h3><p>Node.js · MongoDB · Git · Figma</p></div></div></section>
+
+      <section class="contact" id="contact"><div class="container"><p class="eyebrow">04 / Contact</p><h2>Let's make something<br /><em>that matters.</em></h2><a class="email" href="mailto:kaustubhrane1012@gmail.com">kaustubhrane1012@gmail.com <span>↗</span></a><div class="contact-bottom"><p>Based in Virar, Maharashtra<br />Open to new opportunities.</p><div><a href="tel:+919324538180">+91 93245 38180</a><a href="mailto:kaustubhrane1012@gmail.com?subject=Portfolio%20enquiry">Send an email ↗</a></div><a class="back-top" href="#top">Back to top ↑</a></div></div></section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Kaustubh Rane</p>
-    </footer>
-
-<script src="script.js"></script>
-</body>
+    <footer class="container"><span>© 2026 Kaustubh Rane</span><span>Designed &amp; built with intention</span></footer>
+    <script src="script.js"></script>
+  </body>
 </html>
